@@ -8,7 +8,7 @@ const isActive=window.location.pathname;
 
 const Container=styled.div`
 padding:0.9rem;
-width:238px;
+min-width:238px;
 height:86vh;
 border-style:solid;
 border-width:1px;
@@ -27,6 +27,7 @@ cursor:pointer;
 
 
 
+
 `
 const A=styled.a`
 padding:8px 5px;
@@ -37,15 +38,6 @@ transition:0.3s ease;
 border-radius:6px;
 
 }
-
-
-
-
-
-
-
-
-
 `
 
 const Menu=["Dashboard","Data Entry","Supply Management","Alerts"]
@@ -58,7 +50,7 @@ const Menu=["Dashboard","Data Entry","Supply Management","Alerts"]
                     <A onClick={()=>{
                         navigate(`/${items}`)
                         
-                        }}>
+                        }}> 
                         {items}
                     </A>
                 )
