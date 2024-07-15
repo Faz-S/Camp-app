@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from "styled-components"
 import { useNavigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import './Sidebar.css'
 function Sidebar() {
 const navigate=useNavigate();
 
-const isActive=window.location.pathname;
+
 
 const Container=styled.div`
 padding:0.9rem;
@@ -16,29 +18,14 @@ border-top:none;
 border-left:none;
 background:#17153B;
 color:#F5F7F8;
-
-
 `
 const MenuContainer=styled.div`
 display:flex;
 flex-direction:column;
 gap:2rem;
 cursor:pointer;
-
-
-
-
 `
-const A=styled.a`
-padding:8px 5px;
-&:hover{
-background:#F5F7F8;
-color:#17153B;
-transition:0.3s ease;
-border-radius:6px;
 
-}
-`
 
 const Menu=["Dashboard","Data Entry","Supply Management","Alerts"]
 
@@ -47,12 +34,9 @@ const Menu=["Dashboard","Data Entry","Supply Management","Alerts"]
         <MenuContainer >
             {Menu.map((items)=>{
                 return(
-                    <A onClick={()=>{
-                        navigate(`/${items}`)
-                        
-                        }}> 
+                    <NavLink className="navlink" to={`/${items}`}> 
                         {items}
-                    </A>
+                    </NavLink>
                 )
             })}
       </MenuContainer>

@@ -1,0 +1,20 @@
+.navlink{
+    width:100%;
+    text-decoration:none;
+    color:#F5F7F8;
+    padding: 8px 0 8px 5px;
+}
+
+.navlink:hover{
+    background:#F5F7F8;
+    color:#17153B;
+    transition:0.3s ease;
+    border-radius:6px;
+    
+}
+.navlink.active{
+    background: #F5F7F8;
+    color:#17153B;
+    border-radius: 6px;
+    min-width: 100%;
+}

@@ -12,6 +12,7 @@ align-items:center;
 width:100vw;
 height:100vh;
 background-color:#17153B;
+
 `
 const Wrapper=styled.div
 `
@@ -20,6 +21,7 @@ border-style:solid;
 padding:0rem 2rem 2rem 1rem;
 background-color:#F5F7F8;
 border-radius:8px;
+max-width:400px;
 
 `
 const Input=styled.input`
@@ -29,8 +31,6 @@ const Input=styled.input`
  border-style:solid;
  border-width:1px;
  margin-top:-10px;
- 
- 
 `
 const Button=styled.button`
 margin-top:1.3rem;
@@ -43,35 +43,43 @@ font-weight:bold;
 letter-spacing:1.8px;
 font-size:15px;
 cursor:pointer;
-
 `
-const [username,setUsername] = useState("");
-const [password,setPassword] = useState("");
-
+const A = styled.a`
+cursor:pointer;
+color:#17153B;
+font-weight:bolder;
+`
+const [username,setUsername] = useState();
+const [password,setPassword] = useState();
   return (
     <Container>
       <Wrapper>
+        
         <h1>
             Login
         </h1>
         <p style={{marginTop:"-10px"}}>
-            Enter your username and password below to login your account
+            Enter your username and password below to Login your account
         </p>
         <h4 >
             Username
         </h4>
-        <Input onChange={(e)=>setUsername(e.target.value)} value={username} />
+        <Input autoComplete="off" type="text" onChange={(e)=>setUsername(e.target.value)} value={username} />
         <h4>
             Password
         </h4>
-        <Input onChange={(e)=>setPassword(e.target.value)} type='password' value={password}/>
-        <Button onClick={()=>{
-          navigate("/dashboard")
-        }
-        }
+        <Input autoComplete="off" type="password" onChange={(e)=>setPassword(e.target.value)} value={password}/>
+        <Button
           >
             Sign In</Button>
+            <div style={{display:"flex",alignItems:"center",gap:"5px"}}>
+          <p style={{color:"#17153B"}}>Dont have an account?</p>
+          <A onClick={()=>{
+            navigate('/register')
+          }}>Register</A>
+      </div>  
       </Wrapper>
+      
     </Container>
   )
 }

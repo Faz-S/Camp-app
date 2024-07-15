@@ -1,6 +1,6 @@
 import React from 'react'
-import Sidebar from '../components/custom/Sidebar'
-import Navbar from '../components/custom/Navbar'
+import Sidebar from '../custom/Sidebar'
+import Navbar from '../custom/Navbar'
 import styled from 'styled-components'
 function SupplyManagement() {
 
