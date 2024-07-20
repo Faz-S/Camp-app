@@ -11,7 +11,7 @@ justify-content:center;
 align-items:center;
 width:100vw;
 height:100vh;
-background-color:#17153B;
+background-color:#1A2130;
 
 `
 const Wrapper=styled.div

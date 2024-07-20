@@ -5,7 +5,7 @@ import styled from 'styled-components'
 function Alerts() {
  
   return (
-    <div style={{width:"100%",height:"100%",background:"#17153B"}}>
+    <div style={{width:"100%",height:"100%",background:"#1A2130"}}>
       <Navbar/>
       <div style={{display:"flex"}}>
       <Sidebar/>

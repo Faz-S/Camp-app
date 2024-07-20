@@ -23,7 +23,7 @@ function SupplyManagement() {
    display:flex;
    flex-direction:column;
    align-items:center;
-   border-color:#F5F7F8
+   border-color:#F5F7F8;
    border-width:1px;
    border-style:solid;
    border-left:none;
@@ -107,7 +107,7 @@ const TableContent=[
   }
 ]
   return (
-    <div style={{width:"100%",height:"100%",background:"#17153B"}}>
+    <div style={{width:"100%",height:"100%",background:"#1A2130"}}>
       <Navbar/>
       <div style={{display:"flex"}}>
       <Sidebar/>

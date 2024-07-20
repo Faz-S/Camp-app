@@ -45,7 +45,7 @@ function DataEntry() {
   font-size:20px;
   font-weight:bold;
   text-align:center;
-  background:#17153B;
+  background:#1A2130;
   color:#F5F7F8;
 `
   const ContainerHolder=styled.div`
@@ -86,7 +86,7 @@ height:29vh;
 `
 const [populationValue,setPopulationValue]=useState("")
   return (
-    <div style={{width:"100%",height:"100%",background:"#17153B"}}>
+    <div style={{width:"100%",height:"100%",background:"#1A2130"}}>
       <Navbar/>
       <div style={{display:"flex"}}>
       <Sidebar/>
@@ -94,9 +94,9 @@ const [populationValue,setPopulationValue]=useState("")
        <h2 style={{paddingLeft:"2rem",color:"#F5F7F8"}}>Data Entry</h2>
        <SubContainer>
           <OneConatiner>
-              <h3>
+              <h1 style={{margin:"5px 0 0 0",padding:"0"}}>
                 Camp Conditions
-              </h3>
+              </h1>
               </OneConatiner>
               <ContainerHolder>
                 <SideContainer>

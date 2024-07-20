@@ -14,7 +14,7 @@ border-color:#F5F7F8;
 border-top:none;
 border-left:none;
 border-right:none;
-background:#17153B;
+background:#1A2130;
 `
 
 const HorizontalContainer = styled.div`

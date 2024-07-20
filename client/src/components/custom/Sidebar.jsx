@@ -16,7 +16,7 @@ border-style:solid;
 border-width:1px;
 border-top:none;
 border-left:none;
-background:#17153B;
+background:#1A2130;
 color:#F5F7F8;
 `
 const MenuContainer=styled.div`
